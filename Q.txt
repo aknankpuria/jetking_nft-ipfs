@@ -1,0 +1,17 @@
+Q1 -> 1) Write a Solidity Smart Contract for a Non-Fungible Token (NFT) which can able to perform Identity Verification and Authentication as they can contain unique information 
+         about an individual that is Cryptographically secure.
+
+Ans -> As we all know that NFTs contain unique information and this information is Cryptographically secure . So we can use NFTs for Identity Verification and Authentication .
+       
+      # To do so we have to write a smart Contract (in this practical we have written that Contract in 'auth.sol' file linked in this project .  )
+
+       steps to create an NFT 
+         
+         1. we have to initilize a contract .
+         2. Then we have imported contracts from openzepplin .
+         3. AuthNFT is contract name . 
+         4. "verify function" allows the contract owner to verify the address , while "revoke function" allows the contract owner to revoke all the prevously verified addresses.
+         5. " checkVerfiedOrNot" function allows to check if any address is verified or not . 
+         6. "safemint " function allows the owner to mint the "AuthNFT" .
+         7. "_beforeTokenTransfer" function is overridden to add the Identity Verification check . it ensures that both sender and reciever addresses have been verified before 
+             allowing the token transfer process .
